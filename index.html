@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="x-ua-compatible" content="IE=edge; charset=UTF-8">
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js"></script>
+    </head>
+    <body>
+        
+
+        <div data-role="page" id="map-page" data-url="map-page">
+            <td width="73" align="right">Longitud</td>
+		<td width="118"> <label for="longitud"></label>
+		<input name="longitud" type="text" id="longitud" size="15" /></td>
+
+		<td width="73" align="right">Latitud</td>
+		<td width="118"> <label for="latitud"></label>
+		<input name="latitud" type="text" id="latitud" size="15" /></td>
+
+        <td width="73" align="right">Radio</td>
+		<td width="118"> <label for="radio"></label>
+		<input name="radio" type="text" id="radio" size="15" /></td>
+
+		<button id="send">Enviar</button>
+
+            <div data-role="header" data-theme="a">
+            <h1>Maps</h1>
+            </div>
+            <div role="main" class="ui-content" id="map-canvas">
+                <!-- map loads here... -->
+            </div>
+        </div>
+		<script src="ConexionServidor.js"></script>
+        <script src="maps.js"></script>
+    </body>
+
+    
+</html>
